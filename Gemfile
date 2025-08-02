@@ -62,7 +62,7 @@ gem "avo", "~> 3.21", ">= 3.21.1"
 gem "devise", "~> 4.9", ">= 4.9.4"
 gem "devise-i18n", "~> 1.14"
 gem "goldiloader", "~> 5.4"
-gem "meilisearch-rails", "~> 0.15.0"
+gem "meilisearch-rails", "~> 0.16.0"
 # rack-mini-profiler dependency to profile memory usage.
 gem "memory_profiler", "~> 1.1"
 gem "mission_control-jobs", "~> 1.0", ">= 1.0.2"
