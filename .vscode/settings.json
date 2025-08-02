@@ -1,0 +1,60 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "editor.rulers": [
+    80,
+    120,
+    140
+  ],
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.formatOnType": true
+  },
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "mise"
+  },
+  "rubyLsp.formatter": "rubocop_internal",
+  "railsI18n.localeFilePattern": "config/locales/**/*.yml",
+  "railsI18n.priorityOfLocales": [
+    "ar"
+  ],
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "livePreview.portNumber": 9620,
+  "sqltools.connections": [
+    {
+      "name": "fehresi Rails Development Database",
+      "driver": "PostgreSQL",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5433,
+      "database": "fehresi_development",
+      "username": "fehresi",
+      "password": "fehresi"
+    },
+    {
+      "name": "fehresi Rails Test Database",
+      "driver": "PostgreSQL",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5433,
+      "database": "fehresi_test",
+      "username": "fehresi",
+      "password": "fehresi"
+    }
+  ],
+  "mise.configureExtensionsAutomaticallyIgnoreList": [
+    "ms-vscode.js-debug"
+  ]
+}

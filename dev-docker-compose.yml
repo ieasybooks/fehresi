@@ -1,0 +1,33 @@
+---
+services:
+  postgres:
+    image: postgres:17.5
+    restart: unless-stopped
+    command: postgres -c "shared_preload_libraries=pg_stat_statements" -c "pg_stat_statements.track=all"
+      -c "pg_stat_statements.max=10000" -c "track_activity_query_size=2048"
+    ports:
+    - 5433:5432
+    volumes:
+    - postgres-data:/var/lib/postgresql/data
+    environment:
+    - POSTGRES_USER=fehresi
+    - POSTGRES_PASSWORD=fehresi
+    - POSTGRES_DB=fehresi_development
+  meilisearch:
+    image: getmeili/meilisearch:v1.15.2
+    restart: unless-stopped
+    ports:
+    - 7701:7700
+    volumes:
+    - meilisearch-data:/meili_data
+  redis:
+    image: valkey/valkey:8.1
+    restart: unless-stopped
+    ports:
+    - 6380:6379
+    volumes:
+    - redis-data:/data
+volumes:
+  postgres-data:
+  meilisearch-data:
+  redis-data:
