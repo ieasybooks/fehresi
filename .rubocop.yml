@@ -1,0 +1,33 @@
+plugins:
+  - rubocop-rake
+  - rubocop-rspec
+  - rubocop-rspec_rails
+
+# Omakase Ruby styling for Rails
+inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+
+# Overwrite or add rules to create your own house style
+#
+# # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
+# Layout/SpaceInsideArrayLiteralBrackets:
+#   Enabled: false
+
+AllCops:
+  TargetRubyVersion: 3.4.4
+  NewCops: enable
+  Exclude:
+    - '**/._*'
+    - 'db/schema.rb'
+    - 'vendor/bundle/**/*'
+
+Bundler/OrderedGems:
+  Enabled: true
+
+Metrics/ClassLength:
+  CountAsOne: ['array', 'method_call']
+
+Metrics/MethodLength:
+  CountAsOne: ['array', 'method_call']
+
+RSpec/ExampleLength:
+  CountAsOne: ['array', 'method_call']
