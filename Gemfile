@@ -70,7 +70,7 @@ gem "oj", "~> 3.16", ">= 3.16.10"
 gem "pagy", "~> 9.3", ">= 9.3.4"
 gem "pghero", "~> 3.7"
 gem "pg_query", "~> 6.1"
-gem "phlex-icons", "~> 2.27"
+gem "phlex-icons", "~> 2.35"
 gem "phlex-rails", "~> 2.3", ">= 2.3.1"
 gem "rack-attack", "~> 6.7"
 # Needs to be added after `pg` gem for auto-detection.
