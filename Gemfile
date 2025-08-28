@@ -90,7 +90,7 @@ group :production do
 end
 
 group :development do
-  gem "annotaterb", "~> 4.16"
+  gem "annotaterb", "~> 4.19"
   gem "better_errors", "~> 2.10", ">= 2.10.1"
   gem "binding_of_caller", "~> 1.0", ">= 1.0.1"
   gem "hotwire-spark", "~> 0.1.13"
