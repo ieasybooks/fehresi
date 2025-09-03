@@ -88,7 +88,7 @@ GEM
       activerecord (>= 6.0.0)
       activesupport (>= 6.0.0)
     ast (2.4.3)
-    avo (3.22.5)
+    avo (3.24.0)
       actionview (>= 6.1)
       active_link_to
       activerecord (>= 6.1)
@@ -129,7 +129,7 @@ GEM
       railties (>= 7.1.0, < 8.1.0)
       zeitwerk (>= 2.5.0)
     concurrent-ruby (1.3.5)
-    connection_pool (2.5.3)
+    connection_pool (2.5.4)
     crack (1.0.0)
       bigdecimal
       rexml
@@ -371,7 +371,7 @@ GEM
       nio4r (~> 2.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (3.2.0)
+    rack (3.2.1)
     rack-attack (6.7.0)
       rack (>= 1.0, < 4)
     rack-mini-profiler (4.0.1)
@@ -573,7 +573,7 @@ GEM
     unicode-emoji (4.0.4)
     uri (1.0.3)
     useragent (0.16.11)
-    view_component (4.0.0)
+    view_component (4.0.2)
       activesupport (>= 7.1.0, < 8.1)
       concurrent-ruby (~> 1)
     warden (1.2.9)
@@ -607,7 +607,7 @@ PLATFORMS
 DEPENDENCIES
   active_record_doctor!
   annotaterb (~> 4.16)
-  avo (~> 3.21, >= 3.21.1)
+  avo (~> 3.24)
   better_errors (~> 2.10, >= 2.10.1)
   binding_of_caller (~> 1.0, >= 1.0.1)
   bootsnap

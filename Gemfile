@@ -58,7 +58,7 @@ group :development do
   gem "web-console"
 end
 
-gem "avo", "~> 3.21", ">= 3.21.1"
+gem "avo", "~> 3.24"
 gem "devise", "~> 4.9", ">= 4.9.4"
 gem "devise-i18n", "~> 1.14"
 gem "goldiloader", "~> 5.4"
